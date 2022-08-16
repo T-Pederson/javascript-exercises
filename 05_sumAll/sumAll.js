@@ -1,5 +1,5 @@
 const sumAll = function(start, end) {
-    // Return error if start or end are negative or not a number
+    // Return ERROR if start or end are negative or not a number
     if (start < 0 || end < 0 || typeof start !== 'number' || typeof end !== 'number') {
         return 'ERROR';
     }
@@ -16,6 +16,7 @@ const sumAll = function(start, end) {
     for (let i = start; i <= end; i++) {
         sum += i;
     }
+
     return sum;
 };
 
